@@ -38,7 +38,7 @@ export const Services = () => {
       icon: <SmartphoneIcon className="h-12 w-12 text-accent" />,
       title: "Fabrication",
       description:
-        "filler stuff goes hereeeee  asdfa lsajsdf; asdjf;asdifjseirf ",
+        "We fabricate and build what you need done ",
       features: [
         "things go here",
         "more stuff here",
