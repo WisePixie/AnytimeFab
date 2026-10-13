@@ -45,7 +45,7 @@ export const Navbar = () => {
         </button>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          {["Home", "Services", "Portfolio", "Contact"].map((item) => (
+          {["Home", "Services", "Portfolio", "Shop", "Contact"].map((item) => (
             <Link
               key={item}
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
@@ -59,16 +59,18 @@ export const Navbar = () => {
         {isOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-md p-4">
             <div className="flex flex-col space-y-4">
-              {["Home", "Services", "Portfolio", "Contact"].map((item) => (
-                <Link
-                  key={item}
-                  to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                  className="text-primary hover:text-accent font-medium py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item}
-                </Link>
-              ))}
+              {["Home", "Services", "Portfolio", "Shop", "Contact"].map(
+                (item) => (
+                  <Link
+                    key={item}
+                    to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                    className="text-primary hover:text-accent font-medium py-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item}
+                  </Link>
+                ),
+              )}
             </div>
           </div>
         )}

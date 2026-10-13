@@ -4,6 +4,7 @@ import { App } from "./App";
 import { Services } from "./pages/Services";
 import { Portfolio } from "./pages/Portfolio";
 import { Contact } from "./pages/Contact";
+import { Shop } from "./pages/Shop";
 import { Navbar } from "./components/Navbar";
 export function AppRouter() {
   return (
@@ -14,6 +15,7 @@ export function AppRouter() {
 
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
