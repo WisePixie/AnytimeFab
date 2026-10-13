@@ -6,7 +6,7 @@ export const Contact = () => {
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold text-primary mb-6">Contact Us</h1>
           <p className="text-lg text-secondary max-w-2xl">
-            We'd love to hear from you. Reach out to discuss your projects!
+            We'd love to hear from you. Reach out to discuss your projects! Form is a work in progress, please email.
           </p>
         </div>
       </section>
@@ -46,7 +46,7 @@ export const Contact = () => {
                       href="tel:+15551234567"
                       className="hover:text-accent transition-colors"
                     >
-                      (555) 123-4567
+                      TBD
                     </a>
                   </p>
                 </div>
@@ -62,7 +62,7 @@ export const Contact = () => {
                       href="mailto:info@minimalist.com"
                       className="hover:text-accent transition-colors"
                     >
-                      Projects@anytimefab.com
+                      anytimefabllc@gmail.com
                     </a>
                   </p>
                 </div>

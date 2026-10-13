@@ -230,7 +230,7 @@ export const Home = () => {
                   },
                   {
                     name: "Instagram",
-                    href: "#",
+                    href: "#https://instagram.com/anytime_fab?rpxt=MTk4bjJneTU3bHZpNA%3D%3D",
                     icon: Instagram,
                   },
                   {
