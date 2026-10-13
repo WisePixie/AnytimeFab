@@ -68,7 +68,7 @@ export const Home = () => {
               </p>
               <p className="text-secondary mb-6">
                 From concept to reality - We turn your idea into high-quality, functional parts, FAST. Weather you're an inventor, engineer,
-                small business, or hobbyiust, we've got you covered.
+                small business, or hobbyist, we've got you covered.
               </p>
               <p className="text-secondary mb-6">
                 We specialize in short lead times, custom work, and personalized service that big shops just can't match. 

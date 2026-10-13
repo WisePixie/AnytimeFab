@@ -4,7 +4,7 @@ export const Services = () => {
     {
       title: "Rapid Prototyping",
       description:
-        "filler stuff goes hereeeee  asdfa lsajsdf; asdjf;asdifjseirf "
+        "Anything you can think of with quick turn around time. "
     },
     {
       title: "Welding",
@@ -22,12 +22,12 @@ export const Services = () => {
         "Multiple top of the line printers including large format 3D printers. "
     },
     {
-      title: "FDM Printing",
+      title: "3D Scanning",
       description:
-        "filler stuff goes hereeeee  asdfa lsajsdf; asdjf;asdifjseirf "
+        "Scanning and reverse engineering of parts and components for reproduction or modification."
     },
     {
-      title: "Durable Poder Coating",
+      title: "Durable Powder Coating",
       description:
         "Any color, finish and coating at request from small to large."
     },
