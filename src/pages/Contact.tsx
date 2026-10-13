@@ -18,8 +18,7 @@ export const Contact = () => {
             </h2>
             <div className="w-20 h-1 bg-accent mb-6"></div>
             <p className="text-secondary mb-8">
-              Have a project in mind? Let us help ideas
-              and how we can help bring them to life.
+              Have a project in mind? Let us help bring them to life!
             </p>
             <div className="space-y-6">
               <div className="flex items-start">

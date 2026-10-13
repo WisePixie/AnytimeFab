@@ -26,14 +26,14 @@ export const Portfolio = () => {
       description:
         "Designed and printed a custom button holder for a stock steering wheel using durable materials.",
       image: StockSteeringWheelButtonHolder,
-      tags: ["Printing"],
+      tags: ["3D Printing"],
     },
     {
       title: "Steering Wheel Button Holder",
       category: "Designs",
       description: "Steering wheel button holder for a custom car build.",
       image: WheelButtonHolders,
-      tags: ["Printing", "Designs"],
+      tags: ["3DPrinting", "Designs"],
     },
     {
       title: "Rocker Panel Replacement-1970 C10",
@@ -86,7 +86,7 @@ export const Portfolio = () => {
       category: "Printing",
       description: "Custom-tuned Holley ECU installation and calibration.",
       image: CustomHolleyECU,
-      tags: ["Printing", "SLS Printing"],
+      tags: ["Printing", "3D Printing", "Designs"],
     },
   ];
   const filteredProjects =
@@ -226,21 +226,10 @@ export const Portfolio = () => {
       label: "Welding & Fabrication",
     },
     {
-      id: "SLS Printing",
-      label: "SLS Printing",
+      id: "3D Printing",
+      label: "3D Printing",
     },
-    {
-      id: "FDM Printing",
-      label: "FDM Printing",
-    },
-    {
-      id: "Resin Printing",
-      label: "Resin Printing",
-    },
-    {
-      id: "Durable Powder Coating",
-      label: "Durable Powder Coating",
-    },
+
     {
       id: "Designs",
       label: "Designs",

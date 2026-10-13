@@ -1,4 +1,10 @@
-import { ArrowRightIcon, CheckIcon } from "lucide-react";
+import {
+  ArrowRightIcon,
+  CheckIcon,
+  Facebook,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 import CustomHolleyECU from "../images/CustomHolleyECU.jpg";
 import StockSteeringWheelButtonHolder from "../images/StockSteeringWheelButtonHolder.jpg";
@@ -58,28 +64,26 @@ export const Home = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <p className="text-secondary mb-6">
-                Blurb about the company/
+                We are Anytime Fab, LLC - Your one-stop fab shop in Metro Detroit.
               </p>
               <p className="text-secondary mb-6">
-                We are a rapid prototype fabrication business. Your one-stop fab shop. 
+                From concept to reality - We turn your idea into high-quality, functional parts, FAST. Weather you're an inventor, engineer,
+                small business, or hobbyiust, we've got you covered.
               </p>
               <p className="text-secondary mb-6">
-                We turn your idea into high-quality,
-                functional parts, FAST. Weather you're an inventor, engineer,
-                small business, or hobbyist, we've got you covered.
+                We specialize in short lead times, custom work, and personalized service that big shops just can't match. 
               </p>
-           
             </div>
             <div className="bg-light p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-4">Our Values</h3>
               <ul className="space-y-3">
-                {["Efficiency", "Quality", "Innovation", "Persistence"].map(
+                {["Fast turn around time", "Efficiency", "Quality", "Innovation"].map(
                   (value) => (
                     <li key={value} className="flex items-center">
                       <CheckIcon className="h-5 w-5 text-accent mr-2" />
                       <span>{value}</span>
                     </li>
-                  )
+                  ),
                 )}
               </ul>
             </div>
@@ -103,34 +107,22 @@ export const Home = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Rapid Prototyping",
-                description:
-                  "A group of techniques used to fabricate a physical part or assembly from a three-dimensional design. Creating a better final product, iterating several times between digital designs and physical prototypes with a quick and cost-effective workflow.",
+                title: "Rapid Prototyping"
               },
               {
-                title: "Precision Welding & Fabrication",
-                description:
-                  "A specialized process that combines cutting, shaping, and joining metal parts to create high-accuracy components that meet strict specifications, often with tolerances measured in millimeters or less.",
+                title: "Precision Welding & Fabrication"
               },
               {
-                title: "SLS Printing",
-                description:
-                  "3D printing process that uses a laser to fuse powered particles into a solid, functional part.",
+                title: "High-Quality 3D Scanning & Printing"
               },
               {
-                title: "FDM Printing",
-                description:
-                  "Printing process that builds objects layer by layer. It is a versatile and popular method for creating prototypes and functional prototypes, low-volume production parts, and even end-use products from a wide variety of materials.",
+                title: "CNC Laser Cutting/Engraving/Bending"
               },
               {
-                title: "Resin Printing",
-                description:
-                  "3D printing method that uses UV light to cure liquid photopolymer resin, building objects from a digital model",
+                title: "On-Site Mobile Welding & Fabrication"
               },
               {
-                title: "Durable Powder Coating",
-                description:
-                  "A high-performance, protective finish applied as a dry powder and cured by heat to create a hard, plastic-like layer that is more resistant to scratches, chipping, moisture, and UV radiation than conventional liquid paint.",
+                title: "Durable Powder Coating"
               },
             ].map((service, index) => (
               <div
@@ -138,7 +130,7 @@ export const Home = () => {
                 className="bg-secondary p-6 rounded-lg hover-effect hover:bg-secondary/90"
               >
                 <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                <p className="text-light/90">{service.description}</p>
+                
               </div>
             ))}
           </div>
@@ -229,23 +221,33 @@ export const Home = () => {
 
             <div>
               <h4 className="text-lg font-semibold mb-4">Connect</h4>
-              <div className="flex space-x-4">
+              <div className="flex items-center space-x-4">
                 {[
                   {
                     name: "Facebook",
                     href: "https://www.facebook.com/people/Anytime-Fab/61581233372986/",
+                    icon: Facebook,
                   },
-                  { name: "Twitter", href: "#" },
-                  { name: "Instagram", href: "#" },
-                  { name: "LinkedIn", href: "#" },
-                ].map((item) => (
+                  {
+                    name: "Instagram",
+                    href: "#",
+                    icon: Instagram,
+                  },
+                  {
+                    name: "LinkedIn",
+                    href: "#",
+                    icon: Linkedin,
+                  },
+                ].map(({ name, href, icon: Icon }) => (
                   <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-light/80 hover:text-accent transition-colors"
-                    aria-label={item.name}
+                    key={name}
+                    href={href}
+                    target={href.startsWith("http") ? "_blank" : undefined}
+                    rel={href.startsWith("http") ? "noreferrer" : undefined}
+                    className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 text-light transition-colors hover:border-accent hover:text-accent"
+                    aria-label={name}
                   >
-                    {item.name[0]}
+                    <Icon className="h-5 w-5" />
                   </a>
                 ))}
               </div>

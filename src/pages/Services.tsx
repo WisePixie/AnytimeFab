@@ -1,86 +1,35 @@
-import {
-  MonitorIcon,
-  PenToolIcon,
-  BarChartIcon,
-  SmartphoneIcon,
-  ImageIcon,
-  SearchIcon,
-  CheckIcon,
-} from "lucide-react";
 import { Link } from "react-router-dom";
 export const Services = () => {
   const services = [
     {
-      icon: <MonitorIcon className="h-12 w-12 text-accent" />,
       title: "Rapid Prototyping",
       description:
-        "filler stuff goes hereeeee  asdfa lsajsdf; asdjf;asdifjseirf ",
-      features: [
-        "things go here",
-        "more stuff here",
-        "Other things here",
-        "Performance Optimization",
-      ],
+        "filler stuff goes hereeeee  asdfa lsajsdf; asdjf;asdifjseirf "
     },
     {
-      icon: <PenToolIcon className="h-12 w-12 text-accent" />,
       title: "Welding",
       description:
-        "filler stuff goes hereeeee  asdfa lsajsdf; asdjf;asdifjseirf ",
-      features: [
-        "things go here",
-        "more stuff here",
-        "Other things here",
-        "Performance Optimization",
-      ],
+        "We specialize in many types of welding including tig wedling, mig welding, stick welding, laser and brazing. "
     },
     {
-      icon: <SmartphoneIcon className="h-12 w-12 text-accent" />,
       title: "Fabrication",
       description:
-        "We fabricate and build what you need done ",
-      features: [
-        "things go here",
-        "more stuff here",
-        "Other things here",
-        "Performance Optimization",
-      ],
+        "CNC fiber and laser cutting, CNC bending, CNC Laser tube cutting, and welding all materials."
     },
     {
-      icon: <BarChartIcon className="h-12 w-12 text-accent" />,
-      title: "SLS Printing",
+      title: "3D Printing",
       description:
-        "filler stuff goes hereeeee  asdfa lsajsdf; asdjf;asdifjseirf ",
-      features: [
-        "things go here",
-        "more stuff here",
-        "Other things here",
-        "Performance Optimization",
-      ],
+        "Multiple top of the line printers including large format 3D printers. "
     },
     {
-      icon: <ImageIcon className="h-12 w-12 text-accent" />,
       title: "FDM Printing",
       description:
-        "filler stuff goes hereeeee  asdfa lsajsdf; asdjf;asdifjseirf ",
-      features: [
-        "things go here",
-        "more stuff here",
-        "Other things here",
-        "Performance Optimization",
-      ],
+        "filler stuff goes hereeeee  asdfa lsajsdf; asdjf;asdifjseirf "
     },
     {
-      icon: <SearchIcon className="h-12 w-12 text-accent" />,
       title: "Durable Poder Coating",
       description:
-        "filler stuff goes hereeeee  asdfa lsajsdf; asdjf;asdifjseirf ",
-      features: [
-       "things go here",
-        "more stuff here",
-        "Other things here",
-        "Performance Optimization",
-      ],
+        "Any color, finish and coating at request from small to large."
     },
   ];
   return (
@@ -89,9 +38,9 @@ export const Services = () => {
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold text-primary mb-6">Our Services</h1>
           <p className="text-lg text-secondary max-w-2xl">
-            We offer a comprehensive range incliding: 3D Printing, CNC Milling, Laser
-            Cutting, and Design Consultation to bring your ideas to life with
-            precision and quality.
+            We offer a comprehensive range incliding: 3D Printing, CNC Milling,
+            Laser Cutting, and Design Consultation to bring your ideas to life
+            with precision and quality.
           </p>
         </div>
       </section>
@@ -103,22 +52,10 @@ export const Services = () => {
                 key={index}
                 className="bg-white border border-light rounded-lg p-6 hover-effect"
               >
-                <div className="mb-4">{service.icon}</div>
                 <h3 className="text-2xl font-semibold text-primary mb-3">
                   {service.title}
                 </h3>
                 <p className="text-secondary mb-6">{service.description}</p>
-                <h4 className="font-semibold text-primary mb-2">
-                  What's Included:
-                </h4>
-                <ul className="space-y-2">
-                  {service.features.map((feature, i) => (
-                    <li key={i} className="flex items-center">
-                      <CheckIcon className="h-5 w-5 text-accent mr-2" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>
@@ -133,7 +70,7 @@ export const Services = () => {
                 number: "01",
                 title: "Discovery",
                 description:
-                  "We learn about your business, goals, and audience to develop a strategic approach.",
+                  "We learn about your project and develop a strategic approach to get things done in a timely manner.",
               },
               {
                 number: "02",
